@@ -1,0 +1,26 @@
+# Postgresql local
+
+default: &default
+   adapter: postgresql
+   encoding: unicode
+
+development:
+   adapter: postgresql
+   encoding: unicode
+   database: library_development
+   username: rubyuser
+   password: admin
+
+test:
+   adapter: postgresql
+   encoding: unicode
+   database: library_test
+   username: rubyuser
+   password: <Password for rubyuser>
+
+production:
+   adapter: postgresql
+   encoding: unicode
+   database: library_production
+   username: rubyuser
+   password: <Password for rubyuser>

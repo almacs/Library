@@ -1,0 +1,12 @@
+<h1>Authenticate User</h1>
+
+<%= form_tag :action => 'authenticate' do %>
+<p><label for = "user_user">User</label>:
+
+<%= text_field 'users', 'user' %></p>
+<p><label for = "user_password">Password</label>:
+
+<%= text_field 'users', 'password' %></p>
+<%= submit_tag "Authenticate" %>
+
+<% end -%>
